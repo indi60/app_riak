@@ -1,0 +1,19 @@
+2016-04-18 05:52:02.877 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-04-18 05:52:02.878 [error] <0.70.0> CRASH REPORT Process <0.70.0> with 0 neighbours exited with reason: no match of right hand value undefined in app_riak_sup:init/1 line 28 in gen_server:init_it/6 line 328
+2016-04-18 05:52:02.878 [error] <0.68.0> CRASH REPORT Process <0.68.0> with 0 neighbours exited with reason: {{{badmatch,undefined},[{app_riak_sup,init,1,[{file,"src/app_riak_sup.erl"},{line,28}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,239}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,304}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},{app_riak_app,start,[normal,[]]}} in application_master:init/4 line 133
+2016-04-18 05:56:56.749 [info] <0.7.0> Application lager started on node agung@arrasyid
+2016-04-18 05:56:56.752 [info] <0.7.0> Application app_riak started on node agung@arrasyid
+2016-04-18 06:04:18.936 [info] <0.7.0> Application lager started on node agung@arrasyid
+2016-04-18 06:04:18.940 [info] <0.7.0> Application app_riak started on node agung@arrasyid
+2016-04-18 19:55:20.235 [info] <0.7.0> Application lager started on node 'node1@127.0.0.1'
+2016-04-18 19:55:20.330 [error] <0.88.0> CRASH REPORT Process app_riak_cluster with 0 neighbours exited with reason: bad return value: {ok} in gen_server:init_it/6 line 332
+2016-04-18 19:55:20.331 [error] <0.75.0> Supervisor app_riak_sup had child app_riak_cluster started with app_riak_cluster:start_link() at undefined exit with reason bad return value: {ok} in context start_error
+2016-04-18 19:55:20.332 [error] <0.73.0> CRASH REPORT Process <0.73.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,app_riak_cluster,{bad_return_value,{ok}}}},{app_riak_app,start,[normal,[]]}} in application_master:init/4 line 133
+2016-04-18 19:55:20.333 [info] <0.7.0> Application app_riak exited with reason: {{shutdown,{failed_to_start_child,app_riak_cluster,{bad_return_value,{ok}}}},{app_riak_app,start,[normal,[]]}}
+2016-04-18 20:13:00.945 [info] <0.7.0> Application lager started on node 'node2@127.0.0.1'
+2016-04-18 20:13:00.970 [error] <0.88.0> CRASH REPORT Process app_riak_cluster with 0 neighbours exited with reason: bad return value: {ok} in gen_server:init_it/6 line 332
+2016-04-18 20:13:00.971 [error] <0.75.0> Supervisor app_riak_sup had child app_riak_cluster started with app_riak_cluster:start_link() at undefined exit with reason bad return value: {ok} in context start_error
+2016-04-18 20:13:00.972 [error] <0.73.0> CRASH REPORT Process <0.73.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,app_riak_cluster,{bad_return_value,{ok}}}},{app_riak_app,start,[normal,[]]}} in application_master:init/4 line 133
+2016-04-18 20:13:00.972 [info] <0.7.0> Application app_riak exited with reason: {{shutdown,{failed_to_start_child,app_riak_cluster,{bad_return_value,{ok}}}},{app_riak_app,start,[normal,[]]}}
+2016-04-18 20:31:33.562 [info] <0.7.0> Application lager started on node 'node3@127.0.0.1'
+2016-04-18 20:31:33.592 [info] <0.7.0> Application app_riak started on node 'node3@127.0.0.1'

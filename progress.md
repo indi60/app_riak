@@ -1,0 +1,1 @@
+erl -pa ebin deps/*/ebin -name node3@127.0.0.1

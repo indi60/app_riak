@@ -1,0 +1,44 @@
+2016-04-18 19:55:20 =CRASH REPORT====
+  crasher:
+    initial call: app_riak_cluster:init/1
+    pid: <0.88.0>
+    registered_name: app_riak_cluster
+    exception exit: {{bad_return_value,{ok}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,332}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [app_riak_sup,<0.74.0>]
+    messages: []
+    links: [<0.75.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 119
+  neighbours:
+2016-04-18 19:55:20 =SUPERVISOR REPORT====
+     Supervisor: {local,app_riak_sup}
+     Context:    start_error
+     Reason:     {bad_return_value,{ok}}
+     Offender:   [{pid,undefined},{name,app_riak_cluster},{mfargs,{app_riak_cluster,start_link,[]}},{restart_type,permanent},{shutdown,20000},{child_type,worker}]
+
+2016-04-18 20:13:00 =CRASH REPORT====
+  crasher:
+    initial call: app_riak_cluster:init/1
+    pid: <0.88.0>
+    registered_name: app_riak_cluster
+    exception exit: {{bad_return_value,{ok}},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,332}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [app_riak_sup,<0.74.0>]
+    messages: []
+    links: [<0.75.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 27
+    reductions: 119
+  neighbours:
+2016-04-18 20:13:00 =SUPERVISOR REPORT====
+     Supervisor: {local,app_riak_sup}
+     Context:    start_error
+     Reason:     {bad_return_value,{ok}}
+     Offender:   [{pid,undefined},{name,app_riak_cluster},{mfargs,{app_riak_cluster,start_link,[]}},{restart_type,permanent},{shutdown,20000},{child_type,worker}]
+

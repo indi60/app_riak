@@ -67,6 +67,8 @@ terminate(_Reason, _State) ->
 % 
 maybe_bootstrap_ensembles(Nodes) ->
   io:format("ag:demo_cluster:maybe_bootstrap_ensembles~n"),
+  Members = riak_ensemble_manager:get_members(root),
+  io:format("The members are: ~p.", [Members]),
   case riak_ensemble_manager:enabled() of
     false ->
       OnlineNodes = online_nodes(Nodes),

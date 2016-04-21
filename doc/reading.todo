@@ -1,0 +1,35 @@
+
+Now, to understand what we will do, please read these materials:
+1. ASPLOS'08, "Learning from Mistakes — A Comprehensive Study on Real World Concurrency Bug Characteristics" by Shan Lu, Soyeon Park, Eunsoo Seo, Yuanyuan Zhou.
+2. Distributed Systems Principles and Paradigms (Chapter 6: Synchronization) by Andrew S. Tanenbaum, Maarten Van Steen
+7. http://thesecretlivesofdata.com/raft/
+
+3. Transactional Memory - 2nd Edition (Chapter 2) by Tim Harris, James Larus, Ravi Rajwar
+4. SSV'10 "dBug: Systematic Evaluation of Distributed Systems " by Jiri Simsa, Randy Bryant, Garth Gibson
+5. NSDI'09 "MODIST: Transparent Model Checking of Unmodified Distributed Systems" by Junfeng Yang, Tisheng Chen, Ming Wu, Zhilei Xu, Xuezheng Liu, Haoxiang Lin, Mao Yang, Fan Long, Lintao Zhang, Lidong Zhou
+6. OSDI'14 "SAMC: Semantic-Aware Model Checking for Fast Discovery of Deep Bugs in Cloud Systems" by Tanakorn Leesatapornwongsa, Mingzhe Hao, Pallavi Joshi, Jeffrey F. Lukman, Haryadi S. Gunawi
+
+
+
+oscillation : movement back and forth at a regular speed.
+
+==DBug==
+*they are creating a tools like Samc, they also implement
+pruning to avoid order that equivalent.
+*DBug is developed by C and C++
+*DBug has been tested to - 	PVFS-parallel virtual file system in C
+							FAWN-based K/V storage in c++
+*need configured if we want to implement, it's about 100 lines of code
+*design:
+	agent: execution sequential. in the real system it can be single-thread or multi thread process
+	arbiter:Global view,know every activities such as add, remove agents
+	component: 
+		dbug server,
+			- multi-threaded program 
+		dbug client, 
+			- register,
+			- unregister
+			- interaction
+			- idle
+			- progress 
+		exploration mechanism
